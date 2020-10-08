@@ -3,6 +3,8 @@
 
 ## Write a short comment describing this function
 
+##Función R que almacena en caché cálculos que toman mucho tiempo en ejecutarse.
+
 makeCacheMatrix <- function(x = matrix()){
   
   ## Inicializa la propiedad inversa
@@ -34,6 +36,9 @@ makeCacheMatrix <- function(x = matrix()){
 
 
 ## Write a short comment describing this function
+
+##Calcula la media creado en makeCacheMatrix, primero verifica si la media 
+#ya se ha calculado para obtenerla del cache y así omite el cálculo.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
